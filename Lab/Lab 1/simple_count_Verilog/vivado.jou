@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 29 13:10:04 2022
+# Process ID: 48548
+# Current directory: C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54204 C:\Users\Jianning\Desktop\CG3207\simple_count_Verilog\simple_count_Verilog.xpr
+# Log file: C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog/vivado.log
+# Journal file: C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog/simple_count_Verilog.xpr

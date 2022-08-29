@@ -1,0 +1,105 @@
+ARM Linker, 5.03 [Build 24] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    arm_sample.o(MYCODE) refers to arm_sample.o(CONSTANTS) for LEDS
+    arm_sample.o(MYCODE) refers to arm_sample.o(VARIABLES) for variable1
+    arm_sample.o(CONSTANTS) refers to arm_sample.o(VARIABLES) for variable1
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    MYCODE                                   0x00000000   Section       60  arm_sample.o(MYCODE)
+    ..\ARM_sample.s                          0x00000000   Number         0  arm_sample.o ABSOLUTE
+    CONSTANTS                                0x00000200   Section       76  arm_sample.o(CONSTANTS)
+    LEDS                                     0x00000200   Data           0  arm_sample.o(CONSTANTS)
+    DIPS                                     0x00000204   Data           0  arm_sample.o(CONSTANTS)
+    DELAY_VAL                                0x00000224   Data           0  arm_sample.o(CONSTANTS)
+    variable1_addr                           0x00000228   Data           0  arm_sample.o(CONSTANTS)
+    constant1                                0x0000022c   Data           0  arm_sample.o(CONSTANTS)
+    string1                                  0x00000230   Data           0  arm_sample.o(CONSTANTS)
+    VARIABLES                                0x00000800   Section        4  arm_sample.o(VARIABLES)
+    variable1                                0x00000800   Data           0  arm_sample.o(VARIABLES)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000250, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x0000024c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x0000003c   Code   RO            1  * MYCODE              arm_sample.o
+    0x0000003c   0x000001c4   PAD
+    0x00000200   0x0000004c   Data   RO            2    CONSTANTS           arm_sample.o
+
+
+    Execution Region ER_RW (Base: 0x00000800, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000800   0x00000004   Data   RW            3    VARIABLES           arm_sample.o
+
+
+    Execution Region ER_ZI (Base: 0x00000804, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        60          0         76          4          0        236   arm_sample.o
+
+    ----------------------------------------------------------------------
+       512          0         76          4          0        236   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+       452          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       512          0         76          4          0        236   Grand Totals
+       512          0         76          4          0        236   ELF Image Totals
+       512          0         76          4          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  588 (   0.57kB)
+    Total RW  Size (RW Data + ZI Data)                 4 (   0.00kB)
+    Total ROM Size (Code + RO Data + RW Data)        592 (   0.58kB)
+
+==============================================================================
+
