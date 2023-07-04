@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab2_Verilog/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/ALU.v,1666766869,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/ARM.v,,ALU,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/ARM.v,1666754326,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/CondLogic.v,,ARM,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/CondLogic.v,1666718283,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Decoder.v,,CondLogic,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Decoder.v,1667111400,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Extend.v,,Decoder,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Extend.v,1505119315,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 3/Lab 3 Template/MCycle.v,,Extend,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/ProgramCounter.v,1505119315,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/RegFile.v,,ProgramCounter,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/RegFile.v,1508752003,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Shifter.v,,RegFile,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Shifter.v,1663158892,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Wrapper.v,,Shifter;shiftByNPowerOf2,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/Wrapper.v,1667188973,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/test_Wrapper.v,,Wrapper,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/test_Wrapper.v,1664024436,verilog,,,,test_Wrapper,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 3/Lab 3 Template/MCycle.v,1665396695,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 2/Lab_2_Template/ProgramCounter.v,,MCycle,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 3/Lab 3 Template/test_MCycle.v,1665223509,verilog,,,,test_MCycle,,,,,,,,

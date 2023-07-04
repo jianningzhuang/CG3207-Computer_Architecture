@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 29 13:10:04 2022
+# Process ID: 48548
+# Current directory: C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54204 C:\Users\Jianning\Desktop\CG3207\simple_count_Verilog\simple_count_Verilog.xpr
+# Log file: C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog/vivado.log
+# Journal file: C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jianning/Desktop/CG3207/simple_count_Verilog/simple_count_Verilog.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Shahzor Ahmad/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8784-Pegasus-VI/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'simple_count_Verilog.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 691.355 ; gain = 53.102
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 13:10:36 2022...

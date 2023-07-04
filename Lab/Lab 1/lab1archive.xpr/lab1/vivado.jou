@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep  4 00:17:45 2022
+# Process ID: 11784
+# Current directory: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/lab1archive.xpr/lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28800 C:\Users\Jianning\Desktop\CG3207\Lab\Lab 1\lab1archive.xpr\lab1\lab1.xpr
+# Log file: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/lab1archive.xpr/lab1/vivado.log
+# Journal file: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/lab1archive.xpr/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/lab1archive.xpr/lab1/lab1.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:\Users\Jianning\Desktop\CG3207\Lab\Lab 1\Lab1_MON_A0214561M\Top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1_MON_A0214561M/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/lab1archive.xpr/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

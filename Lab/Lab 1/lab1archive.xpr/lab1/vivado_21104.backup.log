@@ -1,0 +1,1495 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 29 18:25:55 2022
+# Process ID: 21104
+# Current directory: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11080
+# Log file: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab1 {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 696.266 ; gain = 44.781
+add_files -norecurse {{C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v} {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v} {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v} {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v}}
+add_files -fileset constrs_1 -norecurse {{C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Nexys-4-DDR-Master_Lab1.xdc}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top Top [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1131.977 ; gain = 173.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Enable' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Enable' (1#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Get_MEM' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Get_MEM' (2#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v:10]
+ERROR: [Synth 8-439] module 'Seven_Seg_Nexys' not found [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'Top' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1198.539 ; gain = 239.805
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+6 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1198.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Enable' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Enable' (1#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Get_MEM' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Get_MEM' (2#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v:10]
+ERROR: [Synth 8-439] module 'Seven_Seg' not found [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'Top' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1198.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+5 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1207.848 ; gain = 9.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Enable' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Enable' (1#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Get_MEM' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Get_MEM' (2#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Seven_Seg' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Seven_Seg' (3#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (4#1) [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1207.848 ; gain = 9.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1215.336 ; gain = 16.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1215.336 ; gain = 16.797
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Nexys-4-DDR-Master_Lab1.xdc]
+Finished Parsing XDC File [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Nexys-4-DDR-Master_Lab1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1357.059 ; gain = 158.520
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1357.059 ; gain = 158.520
+launch_runs synth_1 -jobs 6
+[Tue Aug 30 21:50:13 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Tue Aug 30 21:51:16 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Aug 30 21:53:05 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.539 ; gain = 11.039
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2480.039 ; gain = 1097.500
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Sat Sep  3 13:02:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 13:02:31 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Sep  3 13:37:14 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/simple_count_Verilog/simple_count_Verilog.runs/impl_1/simple_count.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Nexys-4-DDR-Master_Lab1.xdc]
+Finished Parsing XDC File [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Nexys-4-DDR-Master_Lab1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2622.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2833.766 ; gain = 296.055
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+can't create directory "C:/Users/Jianning/Desktop/CG3207/Lab/Lab": file already exists
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+can't create directory "C:/Users/Jianning/Desktop/CG3207/Lab/Lab": file already exists
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+can't create directory "C:/Users/Jianning/Desktop/CG3207/Lab/Lab": file already exists
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+can't create directory "C:/Users/Jianning/Desktop/CG3207/Lab/Lab": file already exists
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+can't create directory "C:/Users/Jianning/Desktop/CG3207/Lab/Lab": file already exists
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+can't create directory "C:/Users/Jianning/Desktop/CG3207/Lab/Lab": file already exists
+file mkdir {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new}
+close [ open {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v} w ]
+add_files -fileset sim_1 {{C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jianning/Desktop/CG3207/Lab/Lab -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep  3 15:26:23 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3391.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3405.160 ; gain = 2.273
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 3405.160 ; gain = 13.668
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 3434.859 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:01:48 ; elapsed = 00:01:33 . Memory (MB): peak = 3434.859 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3434.859 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3434.859 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 3434.859 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:04:24 ; elapsed = 00:03:57 . Memory (MB): peak = 3434.859 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 3434.859 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:01:43 ; elapsed = 00:01:28 . Memory (MB): peak = 3434.859 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3436.055 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 3436.055 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:28 . Memory (MB): peak = 3436.055 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Sat Sep  3 15:48:23 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 3436.691 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3436.691 ; gain = 0.000
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 15:50:38 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3436.918 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 3436.918 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3515.230 ; gain = 2.301
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 16:03:10 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 16:03:10 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3517.586 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 3517.586 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 16:10:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 16:10:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3519.457 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 3519.457 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3519.457 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:34 . Memory (MB): peak = 3519.457 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:56 ; elapsed = 00:00:49 . Memory (MB): peak = 3519.457 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 3519.457 ; gain = 0.000
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/simulate_Top/sim_top/clock_enable/enable}} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/simulate_Top/sim_top/get_mem/addr}} 
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3520.168 ; gain = 0.000
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3521.453 ; gain = 0.000
+run 2 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 16:27:17 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 16:27:17 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3523.594 ; gain = 0.000
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3523.594 ; gain = 0.000
+run 20 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3523.594 ; gain = 0.000
+run 200 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 3523.594 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 3523.594 ; gain = 0.000
+run 200 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 20:14:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 20:14:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3528.020 ; gain = 4.426
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3528.020 ; gain = 4.426
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 200 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3528.340 ; gain = 0.000
+run 200 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 20:22:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 20:22:31 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulate_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulate_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6511671a69ad4f2bb95061729508b5eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulate_Top_behav xil_defaultlib.simulate_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" Line 7. Module Clock_Enable doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clock_Enable
+Compiling module xil_defaultlib.Get_MEM
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.simulate_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulate_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulate_Top_behav -key {Behavioral:sim_1:Functional:simulate_Top} -tclbatch {simulate_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulate_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulate_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3528.363 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 200 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Sep  3 20:33:40 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/synth_1/runme.log
+[Sat Sep  3 20:33:40 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1_MON_A0214561M/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4F6A
+archive_project {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1archive.xpr.zip} -temp_dir C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21104-Jianning-XPS-15 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21104-Jianning-XPS-15' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21104-Jianning-XPS-15/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

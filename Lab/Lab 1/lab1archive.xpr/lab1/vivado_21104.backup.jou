@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 29 18:25:55 2022
+# Process ID: 21104
+# Current directory: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11080
+# Log file: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab1 {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1} -part xc7a100tcsg324-1
+add_files -norecurse {{C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v} {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v} {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v} {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v}}
+add_files -fileset constrs_1 -norecurse {{C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Nexys-4-DDR-Master_Lab1.xdc}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/simple_count_Verilog/simple_count_Verilog.runs/impl_1/simple_count.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run synth_1 -name synth_1
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new
+file mkdir {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new}
+close [ open {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v} w ]
+add_files -fileset sim_1 {{C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source simulate_Top.tcl
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run all
+restart
+restart
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run all
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run all
+close_sim
+launch_simulation
+source simulate_Top.tcl
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+run all
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+close_sim
+launch_simulation
+source simulate_Top.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source simulate_Top.tcl
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+current_wave_config {Untitled 12}
+add_wave {{/simulate_Top/sim_top/clock_enable/enable}} 
+current_wave_config {Untitled 12}
+add_wave {{/simulate_Top/sim_top/get_mem/addr}} 
+run all
+restart
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+restart
+run 2 us
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+restart
+run 20 us
+restart
+run 200 us
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run 200 us
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run 200 us
+restart
+run 200 us
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source simulate_Top.tcl
+restart
+run 200 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.runs/impl_1/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1_MON_A0214561M/Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project {C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1archive.xpr.zip} -temp_dir C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21104-Jianning-XPS-15 -force -include_local_ip_cache -include_config_settings

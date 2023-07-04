@@ -1,0 +1,101 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Oct 31 14:47:58 2022
+| Host         : Jianning-XPS-15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    23 |
+|    Minimum number of control sets                        |    23 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    49 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    23 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    14 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             376 |          131 |
+| No           | No                    | Yes                    |              21 |            8 |
+| No           | Yes                   | No                     |             185 |           77 |
+| Yes          | No                    | No                     |              91 |           28 |
+| Yes          | No                    | Yes                    |              27 |            8 |
+| Yes          | Yes                   | No                     |             251 |          106 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+--------------------------------------------------------+---------------------------------------------+------------------+----------------+
+|     Clock Signal     |                      Enable Signal                     |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------------------------------+---------------------------------------------+------------------+----------------+
+|  CLK_undiv_IBUF_BUFG | UART1/uart_tx_data                                     | RESET_IBUF                                  |                1 |              1 |
+|  CLK_undiv_IBUF_BUFG | UART1/oversample_baud_tick__0                          | RESET_IBUF                                  |                3 |              4 |
+|  CLK_undiv_IBUF_BUFG | UART1/uart_rx_sync_clock_0                             | RESET_IBUF                                  |                1 |              4 |
+|  CLK_undiv_IBUF_BUFG | UART1/uart_tx_data_block[6]_i_1_n_0                    | RESET_IBUF                                  |                1 |              7 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/E[0]                                     |                                             |                1 |              8 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MemWriteM_reg_1[0]                       | RESET_IBUF                                  |                1 |              8 |
+|  CLK_undiv_IBUF_BUFG | Wrapper1/E[0]                                          | RESET_IBUF                                  |                1 |              8 |
+|  CLK_undiv_IBUF_BUFG | UART1/E[0]                                             | RESET_IBUF                                  |                1 |              8 |
+|  CLK_undiv_IBUF_BUFG | UART1/uart_rx_data_block                               | RESET_IBUF                                  |                2 |             11 |
+|  CLK_undiv_IBUF_BUFG | sel                                                    |                                             |                6 |             19 |
+|  CLK_undiv_IBUF_BUFG |                                                        | RESET_IBUF                                  |               10 |             26 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MCycle1/multiplicand[31]_i_1_n_0         |                                             |                8 |             32 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MCycle1/done_i_1_n_0                     |                                             |               13 |             32 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MCycle1/E[0]                             | RESET_IBUF                                  |               12 |             32 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MCycle1/E[0]                             | Wrapper1/ARM1/CondLogic1/PCWriteLDRM_reg[0] |               28 |             32 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MemWriteM_reg_0[0]                       | RESET_IBUF                                  |                8 |             32 |
+|  CLK_undiv_IBUF_BUFG |                                                        |                                             |                9 |             38 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/p_1_in__0                                |                                             |               16 |             64 |
+|  LED_OBUF_BUFG[7]    |                                                        | RESET_IBUF                                  |               40 |             71 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/RegFile1/RegBank_reg_r1_0_15_0_5_i_1_n_0 |                                             |               12 |             96 |
+|  LED_OBUF_BUFG[7]    |                                                        | Wrapper1/ARM1/MCycle1/SR[0]                 |               35 |            109 |
+|  LED_OBUF_BUFG[7]    | Wrapper1/ARM1/MCycle1/state_reg_0[0]                   | Wrapper1/ARM1/CondLogic1/SR[0]              |               55 |            131 |
+|  LED_OBUF_BUFG[7]    |                                                        |                                             |              122 |            338 |
++----------------------+--------------------------------------------------------+---------------------------------------------+------------------+----------------+
+
+

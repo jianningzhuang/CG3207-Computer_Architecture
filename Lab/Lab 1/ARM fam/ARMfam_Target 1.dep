@@ -1,0 +1,2 @@
+Dependencies for Project 'ARMfam', Target 'Target 1': (DO NOT MODIFY !)
+F (..\ARM_sample.s)(0x630C5E54)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include --list "ARM_sample.lst" --xref -o ".\ARM_sample.o" --depend ".\ARM_sample.d")

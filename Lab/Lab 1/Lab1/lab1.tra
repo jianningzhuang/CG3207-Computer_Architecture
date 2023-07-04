@@ -1,0 +1,19 @@
+*** Creating Trace Output File 'lab1.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\arm_sample.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI ".\arm_sample.o" 
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x00000800 --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lab1.map" -o lab1.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'lab1.axf'
+### ADS-LD Command File: 'lab1.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'lab1.lnp', Handle=0x000006FC
+### Writing '.lnp' file
+### ADS-LD Command file 'lab1.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

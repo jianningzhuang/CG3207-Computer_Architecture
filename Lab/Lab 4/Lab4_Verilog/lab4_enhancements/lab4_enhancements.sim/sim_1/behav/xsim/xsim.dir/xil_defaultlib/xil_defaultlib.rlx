@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/ALU.v,1666766869,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/ARM.v,,ALU,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/ARM.v,1667198706,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/CondLogic.v,,ARM,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/BHT.v,1667056100,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/CondLogic.v,,BHT,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/CondLogic.v,1667033829,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Decoder.v,,CondLogic,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Decoder.v,1667135399,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Extend.v,,Decoder,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Extend.v,1505119315,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/HazardUnit.v,,Extend,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/HazardUnit.v,1667139865,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/MCycle.v,,HazardUnit,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/MCycle.v,1665396695,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/ProgramCounter.v,,MCycle,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/ProgramCounter.v,1666920608,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/RegFile.v,,ProgramCounter,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/RegFile.v,1667024667,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Shifter.v,,RegFile,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Shifter.v,1663158892,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Wrapper.v,,Shifter;shiftByNPowerOf2,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/TOP_Nexys.vhd,1663770552,vhdl,,,,top,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/Wrapper.v,1667190994,verilog,,C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/test_Wrapper.v,,Wrapper,,,,,,,,
+,,,,,,test_Wrapper,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/uart.vhd,1443517678,vhdl,,,,uart,,,,,,,,
+C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab4_Verilog/lab4_enhancements/lab4_enhancements.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

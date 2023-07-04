@@ -1,0 +1,29 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0a8cceac30064b569d6d74efd6e14923 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_Wrapper_behav xil_defaultlib.test_Wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'Op' [C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/ARM.v:614]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.CondLogic
+Compiling module xil_defaultlib.shiftByNPowerOf2
+Compiling module xil_defaultlib.shiftByNPowerOf2(i=1)
+Compiling module xil_defaultlib.shiftByNPowerOf2(i=2)
+Compiling module xil_defaultlib.shiftByNPowerOf2(i=3)
+Compiling module xil_defaultlib.shiftByNPowerOf2(i=4)
+Compiling module xil_defaultlib.Shifter
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.MCycle
+Compiling module xil_defaultlib.HazardUnit
+Compiling module xil_defaultlib.ARM
+Compiling module xil_defaultlib.Wrapper
+Compiling module xil_defaultlib.test_Wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_Wrapper_behav

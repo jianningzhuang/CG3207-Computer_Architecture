@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Lab_2_Template/ALU.v" \
+"../../../../../../Lab_2_Template/ARM.v" \
+"../../../../../../Lab_2_Template/CondLogic.v" \
+"../../../../../../Lab_2_Template/Decoder.v" \
+"../../../../../../Lab_2_Template/Extend.v" \
+"../../../../../../../Lab 3/Lab 3 Template/MCycle.v" \
+"../../../../../../Lab_2_Template/ProgramCounter.v" \
+"../../../../../../Lab_2_Template/RegFile.v" \
+"../../../../../../Lab_2_Template/Shifter.v" \
+"../../../../../../Lab_2_Template/Wrapper.v" \
+"../../../../../../Lab_2_Template/test_Wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

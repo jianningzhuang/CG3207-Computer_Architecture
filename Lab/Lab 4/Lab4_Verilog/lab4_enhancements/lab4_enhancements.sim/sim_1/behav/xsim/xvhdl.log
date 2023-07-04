@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 4/Lab 4 Template/TOP_Nexys.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'

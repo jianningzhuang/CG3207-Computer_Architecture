@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Lab 4 Template/uart.vhd" \
+"../../../../../../Lab 4 Template/TOP_Nexys.vhd" \
+
+# Do not sort compile order
+nosort

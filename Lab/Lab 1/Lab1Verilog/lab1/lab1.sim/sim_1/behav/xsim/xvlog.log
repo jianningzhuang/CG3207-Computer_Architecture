@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Clock_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Get_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Seven_Seg_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab_1_Template/Top_Nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/CG3207/Lab/Lab 1/Lab1Verilog/lab1/lab1.srcs/sim_1/new/simulate_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulate_Top
